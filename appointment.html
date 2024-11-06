@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="slick/slick/slick.css">
+    <link rel="stylesheet" href="slick/slick/slick-theme.css">
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Appointment - Meddical</title>
+</head>
+<body>
+    <header class="p-1">
+        <div class="topbar py-1">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="logo">
+                            <a href="index.html"><img src="image/logo.svg" alt="logo" class="img-fluid"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-2 mt-2">
+                        <div class="details">
+                            <i class="fa-solid fa-phone-volume" style="color: #0758e4;"></i>
+                            <p class="fw-bold text-upperletter" s>Emergency</p>
+                            <p class="fw-bold blue">(237) 681-812-255</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 mt-2">
+                        <div class="details">
+                            <i class="fa-regular fa-clock"  style="color: #0758e4;"></i>
+                            <p class="fw-bold text-upperletter">Working Hours</p>
+                            <p class="fw-bold blue">09:00 - 20:00 Everyday</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 mt-2">
+                        <div class="details">
+                            <i class="fa-solid fa-location-dot" style="color: #0758e4;"></i>
+                            <p class="fw-bold text-upperletter">location</p>
+                            <p class="fw-bold blue">123 Maple Street</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav py-1">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <nav class="navbar navbar-expand-lg">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                            </button>                
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                              <ul class="navbar-nav me-auto ms-5">
+                                <li class="nav-item">
+                                  <a class="nav-link text-white" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link text-white" href="about.html">About us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="service.html">Services</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link text-white" href="doctor.html">Doctors</a>
+                                  </li>
+                                  <li class="nav-item active">
+                                    <a class="nav-link text-white" href="contact.html">Contact us</a>
+                                  </li>
+                              </ul>
+                              <i class="fa-solid fa-search text-white me-3"></i>
+                              <div class="btn me-3">
+                                <a href="appointment.html"><button class="btn btn-info rounded-pill">Appointment</button></a>
+                              </div>
+                            </div>
+                          </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main-content">
+        <section class="appointment-bann mt-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="fw-bold purple">Book an Appointment</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="book-sec mt-3">
+            <div class="container">
+                <div class="row align-item-center justify-content-center gap-3">
+                    <div class="col-md-6">
+                        <h3 class="fw-bold purple">Book an Appointment</h3>
+                        <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, deleniti. Laudantium quia optio corporis deleniti cum, esse cupiditate suscipit ea doloremque consectetur. Neque beatae repudiandae eum sed, deleniti magnam amet.</p>
+                        <div class="form-container">
+                            <form>
+                                <div class="form-row row">
+                                    <div class="col-md-6">
+                                        <label for="name">Name</label>
+                                        <input type="text" id="name" class="form-control" placeholder="Enter your name">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="gender">Gender</label>
+                                        <select id="gender" class="form-select">
+                                            <option>Select gender</option>
+                                            <option>Male</option>
+                                            <option>Female</option>
+                                            <option>Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-row row">
+                                    <div class="col-md-6">
+                                        <label for="email">Email</label>
+                                        <input type="email" id="email" class="form-control" placeholder="Enter your email">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="phone">Phone</label>
+                                        <input type="text" id="phone" class="form-control" placeholder="Enter your phone number">
+                                    </div>
+                                </div>
+                                <div class="form-row row">
+                                    <div class="col-md-6">
+                                        <label for="date">Date</label>
+                                        <input type="date" id="date" class="form-control">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="time">Time</label>
+                                        <input type="time" id="time" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-row row">
+                                    <div class="col-md-6">
+                                        <label for="doctor">Doctor</label>
+                                        <select id="doctor" class="form-select">
+                                            <option>Select doctor</option>
+                                            <option>Dr. Smith</option>
+                                            <option>Dr. Johnson</option>
+                                            <option>Dr. Lee</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="department">Department</label>
+                                        <select id="department" class="form-select">
+                                            <option>Select department</option>
+                                            <option>Cardiology</option>
+                                            <option>Dermatology</option>
+                                            <option>Neurology</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <label for="message">Message</label>
+                                    <textarea id="message" class="form-control" rows="3" placeholder="Enter your message"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-info mt-3 text-center w-100%">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="schedule-card">
+                            <h3>Schedule Hours</h3>
+                            <div class="schedule-row">
+                                <span>Monday</span>
+                                <span>—</span>
+                                <span>09:00 AM - 07:00 PM</span>
+                            </div>
+                            <div class="schedule-row">
+                                <span>Tuesday</span>
+                                <span>—</span>
+                                <span>09:00 AM - 07:00 PM</span>
+                            </div>
+                            <div class="schedule-row">
+                                <span>Wednesday</span>
+                                <span>—</span>
+                                <span>09:00 AM - 07:00 PM</span>
+                            </div>
+                            <div class="schedule-row">
+                                <span>Thursday</span>
+                                <span>—</span>
+                                <span>09:00 AM - 07:00 PM</span>
+                            </div>
+                            <div class="schedule-row">
+                                <span>Friday</span>
+                                <span>—</span>
+                                <span>09:00 AM - 07:00 PM</span>
+                            </div>
+                            <div class="schedule-row">
+                                <span>Saturday</span>
+                                <span>—</span>
+                                <span>09:00 AM - 07:00 PM</span>
+                            </div>
+                            <div class="schedule-row">
+                                <span>Sunday</span>
+                                <span>—</span>
+                                <span>Closed</span>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="emergency">
+                                <span class="icon-phone">📞</span> Emergency
+                                <div class="emergency-number">(237) 681-812-255</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="map py-3 mt-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2091254.4997162463!2d-117.90834004790335!3d34.52188907068885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20Angeles%2C%20CA%2C%20USA!5e0!3m2!1sen!2s!4v1730738562216!5m2!1sen!2s" width="100%" height="100%" style="border:0; height: 100vh;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="touch-sec mt-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="text-box text-center">
+                            <h4 class="blue text-uppercase">get in touch</h4>
+                           <h2 class="purple fw-bold">Contact</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mt-3">
+                            <div class="card-box d-flex align-item-center justify-content-center gap-3">
+                                <div class="card">
+                                    <div class="card-body bg-accent text-center">
+                                      <h5 class="card-title mt-5 pb-3"><i class="fa-solid fa-phone-volume fz-25"></i></h5>
+                                      <h5  class="purple fw-bold text-upperletter">emergency</h5>
+                                      <h6>(237) 681-812-255</h6>
+                                      <h6>(237) 666-331-894</h6>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-body bg-purple text-center">
+                                      <h5 class="card-title mt-5 py-3"><i class="fa-solid fa-location-dot fz-25"></i></h5>
+                                      <h5  class="purple fw-bold text-upperletter">location</h5>
+                                      <h6>123 Maple street</h6>
+                                      <h6>9876 same place</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-3">
+                            <div class="card-box d-flex align-item-center justify-content-center gap-3">
+                                <div class="card">
+                                    <div class="card-body bg-accent text-center">
+                                      <h5 class="card-title mt-5 py-3"><i class="fa-solid fa-envelope fz-25"></i></h5>
+                                      <h5  class="purple fw-bold text-upperletter">Email</h5>
+                                      <h6>112@gmail.com</h6>
+                                      <h6>123@gmail.com</h6>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-body bg-purple text-center">
+                                      <h5 class="card-title mt-5 py-3"><i class="fa-regular fa-clock fz-25"></i></h5>
+                                      <h5  class="purple fw-bold text-upperletter">working hours</h5>
+                                      <h6>Mon-Sat 09:00-20:00</h6>
+                                      <h6>Sunday Emergency Only</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer role="footer-contnet" class="bg-purple">
+        <div class="footer mt-5 py-4">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <img src="image/footer-logo.svg" alt="logo" class="img-fluid mt-5">
+                        <p class="text-capitalize mt-3">leading the way in medical <br>excellence, trusted care</p>
+                    </div>
+                    <div class="col-md-2">
+                        <h3 class="fw-bold text-capitalize">nav links</h3>
+                        <a href="#" class="text-white"><p>Appointment</p></a>
+                        <a href="#" class="text-white"><p>Doctors</p></a>
+                        <a href="#" class="text-white"><p>Services</p></a>
+                        <a href="#" class="text-white"><p>About Us</p></a>
+                    </div>
+                    <div class="col-md-2">
+                        <h3 class="fw-bold text-capitalize">Contact links</h3>
+                        <p>call: (237) 681-812-255</p>
+                        <p>Email: 112@gmail.com</p>
+                        <p>Address: 123 some place</p>
+                        <p>012 same place</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3 class="fw-bold text-capitalize">NewsLetter</h3>
+                        <form action="" class="position-relative gap-2">
+                            <input type="email" class="form-control blue" placeholder="Enter your email address">
+                            <i class="fa-regular fa-paper-plane position-absolute purple"></i>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-sec">
+            <div class="container border-top border-white">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="credit mt-3">
+                            <p class="fw-bold">
+                                © 2021 Hospital's name All Right Reserved by PNTEC-LTD
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="social-icons d-flex justify-content-end gap-3 fz-25 mt-3">
+                            <i class="fa-brands fa-linkedin bg-purle"></i>
+                            <i class="fa-brands fa-instagram bg-purle"></i>
+                            <i class="fa-brands fa-facebook bg-purle"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p class="text-capitalize">@ develope by <a href="https://madeenali.netlify.app/" class="text-decoration-none fw-bold"> Madeen Ali</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

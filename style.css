@@ -1,0 +1,392 @@
+@font-face {
+    font-family: lop;
+    src: url(./OFL.txt);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: lop;
+}
+header p {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 120px;
+    height: 20px;
+    -webkit-mask: radial-gradient(circle closest-side,#000 94%,#0000) left/20% 100%;
+    background: linear-gradient(#000 0 0) left/0% 100% no-repeat #ddd;
+    animation: l17 2s infinite steps(6);
+  }
+  @keyframes l17 {
+      100% {background-size:120% 100%}
+  }
+/*topbar*/
+.blue {
+    color: #159EEC;
+}
+.bg-blue {
+    background-color: #159EEC;
+}
+header i {
+    font-size: 20px;
+}
+.topbar .logo img{
+    margin-top: 1rem;
+}
+.nav {
+    background-color: #1F2B6C;
+}
+.nav-item a:hover {
+    text-decoration: underline #159EEC;
+    transition: ease-in-out 0.2000;
+}
+.active {
+    text-decoration: underline #159EEC;
+}
+.purple{
+    color: #1F2B6C;
+}
+.bg-purple{
+    background-color: #1F2B6C;
+    color: #Fff;
+}
+/*banner-sec*/
+.banner-sec {
+    padding: 100px 30px;
+    background-image: url(image/banner.png);
+    /*background-position: center;*/
+    background-size: cover;
+}
+/*banner-card*/
+.banner-card {
+    margin-top: -3rem;
+}
+.ban-card {
+    padding: 10px 0;
+    height: 15vh;
+}
+.banner-card .ca-1:hover {
+    transform: scale(1.2);
+    transition: ease-in-out;
+    background-color: #159EEC;
+}
+.banner-card .ca-2:hover {
+    transform: scale(1.2);
+    transition: ease-in-out;
+    background-color: #1F2B6C;
+}
+/*services-sec*/
+.sidebar {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+}
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    font-weight: bold;
+    color: #6c757d;
+    cursor: pointer;
+}
+.menu-item.active {
+    background-color: #50597b;
+    color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+}
+.menu-item i {
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+.view-all {
+    background-color: #50597b;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.bullet-list {
+    color: #50597b;
+}
+.bullet-list li {
+    display: inline-block;
+    margin-right: 20px;
+}
+.bullet-list li::before {
+    content: "• ";
+    color: #56c5ff;
+    font-weight: bold;
+}
+/*our doc*/
+.bg-accent {
+    background-color: #BFD2F8;
+}
+.fz-25{
+    font-size: 25px;
+}
+.fz-35{
+    font-size: 35px;
+}
+.doctor-slider {
+    cursor: pointer;
+}
+.card {
+    width: 18rem;
+}
+/*speciality sec*/
+.speciality-sec .card i {
+    font-size: 50px;
+}
+/*appointment sec*/
+.appointment-sec {
+    position: relative;
+    z-index: 1;
+    padding: 75px 30px;
+    background-image: url(image/appointment.png);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Create pseudo element for background with filter */
+.appointment-sec::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('your-image-path.jpg');  /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    filter: contrast(0.5);
+    z-index: -1;
+}
+
+/* Ensure content stays above the filtered background */
+.appointment-sec .text-box,
+.appointment-sec .form-container {
+    position: relative;
+    z-index: 2;
+}
+.form-container {
+    background-color: #4a5979;
+    padding: 20px;
+    border-radius: 8px;
+    color: #ffffff;
+}
+.form-control, .form-select {
+    background-color: #4a5979;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+.form-control::placeholder, .form-select {
+    color: #c0c0c0;
+}
+.form-row {
+    margin-bottom: 15px;
+}
+/*footer*/
+.footer a{
+    text-decoration: none;
+}
+footer form input{
+    width: 50% !important;
+    margin-left: 33%;
+}
+footer form input::placeholder {
+    font-size: 15px;
+}
+footer form i {
+    margin-left: 7rem;
+    margin-top: -1.78rem;
+    font-size: 20px ! IMPORTANT;
+}
+/* aboutpage*/
+.about-bann{
+    padding: 75px 0;
+    background-image: url(image/medical.png);
+    background-position: top;
+    background-size: cover;
+    filter: contrast(0.5);
+}
+/*testimonal-sec*/
+.testimonal-box{
+    padding: 0px 0px;
+    background-image: url(image/testimonal.png);
+    background-position: center;
+    background-size: cover;
+}
+.test-pur {
+    padding: 109px 0;
+    background-color: #1f2b6c52;
+    color: #Fff;
+}
+/*doctors page*/
+.doctor-bann{
+    padding: 75px 0;
+    background-image: url(image/medical.png);
+    background-position: top;
+    background-size: cover;
+    filter: contrast(0.5);
+}
+/* services page*/
+.services-bann{
+    padding: 75px 0;
+    background-image: url(image/services.png);
+    background-position: center;
+    background-size: cover;
+    filter: contrast(0.5);
+}
+/* contact pAGE*/
+.contact-bann{
+    padding: 75px 0;
+    background-image: url(image/contact.png);
+    background-position: center;
+    background-size: cover;
+    filter: contrast(0.5);
+}
+.contact-form {
+    background-color: #11235B; /* Dark blue background */
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+.contact-form input,
+.contact-form textarea {
+    background-color: #1B3270; /* Slightly lighter blue for input fields */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+}
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #A9C0EB; /* Light blue placeholder text */
+}
+.contact-form .submit-btn {
+    background-color: #A9C0EB; /* Light blue background for submit button */
+    color: #11235B;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%;
+}
+.contact-form .submit-btn:hover {
+    background-color: #92AED9; /* Slightly darker blue on hover */
+    color: #fff;
+}
+/*appointment*/
+.appointment-bann{
+    padding: 75px 0;
+    background-image: url(image/appoint-bann.png);
+    background-position: center;
+    background-size: cover;
+    filter: contrast(0.5);
+}
+.schedule-card {
+    background-color: #11235B; /* Dark blue background */
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 136px;
+}
+.schedule-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.schedule-card .schedule-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+.schedule-card .divider {
+    margin: 20px 0;
+    border-top: 1px solid #A9C0EB; /* Light blue divider line */
+}
+.schedule-card .emergency {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.schedule-card .emergency-number {
+    color: #A9C0EB; /* Light blue color for phone number */
+}
+.icon-phone {
+    margin-right: 5px;
+}
+/*news page*/
+.news-bann{
+    padding: 75px 0;
+    background-image: url(image/news-bann.png);
+    background-position: center;
+    background-size: cover;
+    filter: contrast(0.5);
+}
+.post p {
+    letter-spacing: 2px !important;
+}
+/*Responsive Start*/
+@media screen and (max-width: 1199px) {
+    .our-doctors .row {
+        margin-left: -4rem !important;
+    }}
+@media screen and (max-width: 991px) {
+    header {
+        position: relative;
+    }
+    .navbar-toggler {
+        margin-left: 87%;
+        background-color: #159EEC;
+    }
+    .topbar .logo img {
+        content: url(image/footer-logo.svg);
+        margin-left: 20px;
+    }
+    .topbar .logo img {
+        margin-top: 1.5rem;
+        position: absolute;
+        margin-left: 20px;
+    }
+    .topbar .col-md-2{
+        display: none;
+    } 
+    .doctor-slider{
+        gap: 3rem;
+    }
+}
+@media screen and (max-width: 767px) {
+    .banner-sec {
+        padding: 94px 30px;
+        background-image: url(image/banner.png);
+        background-position: center; 
+        background-size: cover;
+    }
+}
+@media screen and (max-width: 575px) {
+    .banner-sec {
+        padding: 58px 30px;
+        background-image: url(image/banner.png);
+        background-position: center;
+        background-size: cover;
+    }
+    .banner-card {
+        margin-top: 0rem;
+    }
+}
